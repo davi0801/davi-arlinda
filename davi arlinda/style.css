@@ -15,10 +15,10 @@ for (let i = 0; i < botoes.length; i++) {
 }
 
 const contadores = document.querySelectorAll(".contador")
-const tempoparaobjetivo = new data ("2024-05-20T00:00:00")
-const tempoparaobjetivo = new data ("2024-12-20T00:00:00")
-const tempoparaobjetivo = new data ("2024-02-20T00:00:00")
-const tempoparaobjetivo = new data ("2024-01-20T00:00:00")
+const tempoparaObjetivo1 = new data ("2024-05-20T00:00:00")
+const tempoparaObjetivo2= new data ("2024-12-20T00:00:00")
+const tempoparaObjetivo3 = new data ("2024-02-20T00:00:00")
+const tempoparaObjetivo4 = new data ("2024-01-20T00:00:00")
 contadores[0].textContent = caculatempo(tempoparaoobjetivo)
 
 function caculatempo(tempoparaoobjetivo){
@@ -37,10 +37,19 @@ function caculatempo(tempoparaoobjetivo){
     return dias+ "dias " + horas + "horas" + minutos + "minutos" + segundos + "segundos";
 
 
-    if (tempoFinal > 0) {
-        return dias+ "dias " + horas + "horas" + minutos + "minutos" + segundos + "segundos";
-}else{
-    return "prazo final";
+//    if (tempoFinal > 0) {
+  //      return dias+ "dias " + horas + "horas" + minutos + "minutos" + segundos + "segundos";
+//}else{
+  //  return "prazo final";
 
+//}
+
+
+function atualizarCronometro(){
+    for(let i=0; i<contadores.length; i++)
+    contadores [i]. textContent = calculaTempo
 }
+
+
+
 }
