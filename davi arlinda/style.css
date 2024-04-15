@@ -24,13 +24,13 @@ body {
     justify-content: center;
     align-items: center;
     max-width: 1200px;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 
 .titulo-principal {
     text-align: left;
-    width: 100%;
+    width:30%;
     font-size: 32px;
 }
 
